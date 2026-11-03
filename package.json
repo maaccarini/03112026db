@@ -1,0 +1,20 @@
+{
+  "name": "03112026db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/typescript": "^0.4.29",
+    "@types/uuid": "^10.0.0",
+    "express": "^5.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2",
+    "uuid": "^14.0.3"
+  }
+}

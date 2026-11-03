@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    /* Projects */
+    "incremental": true,
+    
+    /* Language and Environment */
+    "target": "es2020",
+
+    /* Modules */
+    "module": "commonjs",
+
+    /* Emit */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+
+    /* Type Checking */
+    "strict": true,
+  },
+  "include": ["src/**/*.ts"],
+}
