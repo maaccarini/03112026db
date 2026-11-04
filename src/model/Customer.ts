@@ -7,16 +7,15 @@ export class Customer {
     private _name: string;
     private _document : Document;
 
-    constructor(id: Uuid, name: string, document: Document) {
-        this._id = id;
+    constructor(name: string, document: Document, id?: string) {
+        this._id = id ? new Uuid(id) : Uuid.randomGenerator();
         this._name = name;
         this._document = document;
     }
 
-    static create(id: string, name: string, document: string) : Customer {
-        const uuid = new Uuid(id);
+    static create(name: string, document: string, id?: string) : Customer {
         const nameCustomer = name;
         const currentDocument = DocumentFactory.create(document);
-        return new Customer(uuid, nameCustomer, currentDocument);
+        return new Customer(nameCustomer, currentDocument, id);
     }
 }
