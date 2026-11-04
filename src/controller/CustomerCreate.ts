@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { CustomerRepository } from "../model/Repository/CustomerRepository";
 import { Customer } from "../model/Customer";
 
-export class CreateCustomerController {
+export class CreateCustomer {
 
     constructor(readonly repository : CustomerRepository) {
     }
